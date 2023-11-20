@@ -1,0 +1,94 @@
+.loginpage{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    // align-items: center;
+    .left{
+        .li{
+            display: flex;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 50px;
+            width: 325px;
+            .fake{
+                width: 15px;
+                height: 35px;
+            }
+            .logininput{
+                text-align: justify;
+                width:275px;
+                height: 35px;
+                border-radius:50px;
+                border: none;
+                outline: none;
+                font-weight: 200;
+                font-size: 14px;
+            }
+            .password{
+                display: flex;
+                align-items: center;
+                .passeye{
+                    background-color: #fff;
+                    margin-right: 5px;
+                    height: 20px;
+                    width: 15px;
+                    outline: none;
+                    border: none;
+                    border-radius: 50px;
+                    align-items: center;
+                }
+
+            }
+        }
+        // width:max-content;
+        h1,p{
+            text-align: center;
+        }
+        p{
+            font-weight: 500;
+        }
+        .form{
+            margin-top:50px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+            .fp{
+                display: flex;
+                justify-content: flex-end;
+                width: 300px;
+                .forgotpass{
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    color: black;
+
+            }
+            }
+            .loginbutton{
+                margin-top: 20px;
+                height: 35px;
+                width: 150px;
+                border-radius: 50px;
+                background-color: black;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+        .footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2px;
+            .footer1{
+                font-weight: 200;
+            }
+            .footer2{
+                text-decoration: none;
+                color:black;
+                font-weight: 400;
+            }
+        }
+    }
+}

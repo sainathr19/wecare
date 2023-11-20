@@ -1,0 +1,55 @@
+.forgotpass{
+    p{
+        font-weight: 500;
+    }
+    h1{
+        margin: 0%;
+    }
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    .li{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 50px;
+        .fake{
+            width: 25px;
+            height: 35px;
+        }
+        .logininput{
+            text-align: justify;
+            width:300px;
+            height: 35px;
+            border-radius:50px;
+            border: none;
+            outline: none;
+        }
+    }
+    .loginbutton{
+        margin-top: 20px;
+        height: 35px;
+        width: 150px;
+        border-radius: 50px;
+        background-color: black;
+        color: #fff;
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        .footer1{
+            font-weight: 200;
+        }
+        .footer2{
+            text-decoration: none;
+            color:black;
+            font-weight: 400;
+        }
+    }
+}
