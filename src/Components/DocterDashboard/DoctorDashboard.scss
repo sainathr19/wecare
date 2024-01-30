@@ -1,0 +1,74 @@
+.status-cards{
+    margin: 5vh;
+    font-family: 'Quicksand', sans-serif;
+
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+    gap: 5px;
+    .card{
+        background-color: #FAF9F6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 15px;
+        width: 25%;
+        .card-value{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 45px;
+            height: 50%;
+            width: 50%;
+        }
+        .card-text{
+            // background-color: #EDEADE;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 25%;
+            width: 50%;
+            font-size: 25px;
+            text-wrap: nowrap;
+        }
+    }
+}
+.patient-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+    height: 8vh;
+    .search-input{
+        width: 25%;
+        height: 30px;
+        border: 1px solid black;            
+        border-radius: 5px;
+        padding-left: 2vh;
+    }
+    .search-button{
+        // font-size:medium;
+        color: black;
+        border: 1px solid black;
+        // text-transform: none;
+        // background-color: black;
+        // text-decoration: none;
+        // color:#fff; 
+        // // height: 31px;
+        // width: 75px;
+        // border-radius: 5px;
+    }
+}
+
+.doctor-dashboard{
+    // background-color: aquamarine;
+    display: flex;
+    .dashboard-sidepanel{
+        // background-color: blueviolet;
+        width: 15%;
+    }
+    .dashboard-main{
+        width: 85%;
+    }
+}

@@ -1,6 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Quicksand:wght@600&display=swap');
 .wrapper{
-    .topbox{
-        background-color: #f7f5fd;
-        height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+.banner{
+//     background: rgb(246,246,246);
+// background: linear-gradient(90deg, rgba(246,246,246,1) 0%, rgba(255,245,245,1) 82%, rgba(246,246,246,1) 100%);
+margin-top: 0%;
+    font-family: 'Quicksand', sans-serif;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // background-color: bisque;
+
+    .banner-head{
+        text-align: center;
+        font-size: 50px;
+    }
+    .banner-text{
+        margin-top: 2%;
+        text-align: center;
+        width: 50%;
+        font-size: 25px;
+        @media (max-width:425px) {
+            width: 100%;
+            
+        }
+    }
+}
+// /assets/images/partner1.png,/a"
+.div-1-head{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 5%;
+}
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:30%;
+        font-family: 'Quicksand', sans-serif;
+        .card-head{
+            font-size: 25px;
+            color: #4A4A4A;
+            margin-bottom: 0%;
+        }
+        .card-img{
+            width: 300px;
+        }
+        .card-text{
+            text-align: center;
+            width: 350px;
+            margin: 2%;
+        }
+    }
+}
+.features{
+    font-family: 'Quicksand', sans-serif;
+    .features-head{
+        text-align: center;
+        font-size: 35px;
+    }
+    .features-cards{
+        display: flex;
+        justify-content: space-around;
+        gap: 5px;
+        .feature-card{
+            // background-color: aquamarine;
+            width: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .feature-card-img{
+                width: 75px;
+            }
+
+        }
+    }
+}
+.contact-us{
+    font-family: 'Quicksand', sans-serif;
+
+    .contactus-head{
+        text-align: center;
+        font-size: 35px;
+
     }
 }

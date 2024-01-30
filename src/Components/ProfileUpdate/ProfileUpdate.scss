@@ -1,0 +1,59 @@
+.profile-update{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+
+    .head{
+        font-size: 35px;
+
+    }
+    .update-buttons{
+        margin-top: 4%;
+        .buttons{
+            display: flex;
+            font-size:medium;
+            border: 1px solid black;
+            background-color: black;
+            text-decoration: none;
+            color:#fff; 
+            height: 30px;
+            width: 75px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+        }
+    }
+    .profile-feilds{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        .horizontal-feilds{
+            display: flex;
+            justify-content:center;
+            gap: 13%;
+        }
+        .input-f{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .input-head{
+                padding-left: 15px;
+            }
+        }
+        display: flex;
+        .logininput{
+            border: 1px solid;
+            border-radius: 50px;
+            text-align: justify;
+            width:300px;
+            height: 35px;
+            font-weight: 200;
+            font-size: 14px;
+            padding-left: 25px;
+        }
+    }
+}

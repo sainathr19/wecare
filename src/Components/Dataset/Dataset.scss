@@ -1,0 +1,41 @@
+.monitor-div{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    .heart-rate{
+        margin: 3vh;
+        width: 80%;
+        height: 45vh;
+        .heart-rate-head{
+            font-size: 19px;
+            font-weight: 500;
+            display: none;
+        }
+        .heart-rate-chart{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .bottom{
+        margin: 3vh;
+        height: 30vh;
+        display: flex;
+        gap: 2vh;
+        .temperature{
+            width: 25%;
+            height: 30vh;
+            .temp-value{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .blood-pressure{
+            margin-left: 2vh;
+            width: 100%;
+            .blood-pressure-chart{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
