@@ -10,7 +10,7 @@ export default function NavBar() {
         </div>
         <div className="right">
           <div className="navoptions">
-            <Link className="buttons" to="/login/selectuser">
+            <Link className="buttons" to="/login/patient">
               Login
             </Link>
           </div>

@@ -4,8 +4,7 @@ import toast, { Toaster } from "react-hot-toast";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import { useSignIn } from "react-auth-kit";
-import axios from "axios";
+
 export default function LoginPage(props) {
   const navigate = useNavigate();
   let [Formdata, setFormdata] = useState({ username: "", password: "" });
@@ -22,28 +21,18 @@ export default function LoginPage(props) {
 
   const loginsubmit = async () => {
     console.log(Formdata);
-    await axios
-      .get("/", {
-        params: Formdata,
-      })
-      .then((res) => {
-        if (res.data === "") {
-          toast.error("Invalid credentials");
+    if (Formdata.username === "testuser" || Formdata.password === "password") {
+      toast.success("Logged in");
+      setTimeout(function () {
+        if (props.isDoctor) {
+          navigate("/dashboard/doctor", { replace: true });
         } else {
-          toast.success("Logged in");
-          setTimeout(function () {
-            if (props.isDoctor) {
-              navigate("/dashboard/doctor", { replace: true });
-            } else {
-              navigate("/dashboard/monitor", { replace: true });
-            }
-          }, 3000);
+          navigate("/dashboard/monitor", { replace: true });
         }
-        console.log(res.data);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
+      }, 3000);
+    } else {
+      toast.error("Invalid credentials");
+    }
   };
   const passeye = () => {
     passmode === "text" ? setpassmode("password") : setpassmode("text");
