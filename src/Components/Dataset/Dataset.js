@@ -5,6 +5,7 @@ export default function Dataset() {
     <div className="monitor-div">
       <div className="heart-rate">
         <iframe
+          title="heart-rate"
           className="heart-rate-chart"
           width="80%"
           frameborder="0"
@@ -14,6 +15,7 @@ export default function Dataset() {
       <div className="bottom">
         <div className="temperature">
           <iframe
+            title="temperature"
             className="temp-value"
             frameborder="0"
             src="https://stem.ubidots.com/app/dashboards/public/widget/0zz6POxpk1ps_JhrQehCUwboUHKb_O3yMe-_qN4VJmk?embed=true"
@@ -21,6 +23,7 @@ export default function Dataset() {
         </div>
         <div className="blood-pressure">
           <iframe
+            title="bpm"
             className="blood-pressure-chart"
             frameborder="0"
             src="https://stem.ubidots.com/app/dashboards/public/widget/rQ1i1k-NpmVtRXhU-g9Ik6hyDAfYELEIZPxZ29HCzk0?embed=true"

@@ -8,13 +8,15 @@ export default function NavBar() {
         <div className="left">
           <h3>WeCare</h3>
         </div>
-        <div className="right">
-          <div className="navoptions">
-            <Link className="buttons" to="/login/patient">
-              Login
-            </Link>
+        {!localStorage.getItem("username") && (
+          <div className="right">
+            <div className="navoptions">
+              <Link className="buttons" to="/login/patient">
+                Login
+              </Link>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "./dashboard.scss";
 import { Link, Navigate, Outlet } from "react-router-dom";
-import LoggedNav from "../LoggedNav/LoggedNav";
+import NavBar from "../NavBar/navbar";
 
 export default function DashBoard() {
   const logout = () => {
@@ -10,7 +10,7 @@ export default function DashBoard() {
   };
   return (
     <>
-      <LoggedNav />
+      <NavBar />
       <div className="container">
         <div className="sidebar">
           <div className="welcome">

@@ -1,7 +1,6 @@
 // import React, { useEffect, useState } from "react";
 import NavBar from "../NavBar/navbar";
 import "./Homepage.scss";
-import { Navigate } from "react-router-dom";
 export default function HomePage() {
   return (
     <>
